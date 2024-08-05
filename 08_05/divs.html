@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divs</title>
+   <link rel="shortcut icon" href="favi.jpg" type="image/x-icon">  <!--  colocar icon na paigina -->
+    <style>
+        .container{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+            'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+             sans-serif;
+             text-align: center;
+        }
+        .linha{
+            width: 100%;
+            text-align: left;
+        }
+        .inf{
+            width: 50%;
+        }
+        .foto{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .alinhar{
+            text-align: left;
+        }
+        .arruma{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="arruma">
+            <h1 class="alinhar">Sarah Monteiro Duque</h1>
+            <img src="https://images.pexels.com/photos/3992656/pexels-photo-3992656.png?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" class="foto">
+        </div>
+        
+        <div class="linha">
+            <div class="inf">
+                Viuva, 32 anos, brasileira.
+            </div>
+            <div class="inf">
+                Rua 7 setembro, número 50.
+            </div>
+            <div class="inf">
+                Jardim Tropical, Cerra - ES, CEP: xxxxxxxxxx
+            </div>
+            <div class="inf">
+                Telefone: 999999999
+            </div>
+            <div class="inf">
+                E-mail: sarah2@gmail.com
+            </div>
+            
+             <h3 class="alinhar">Objetivo Proficional</h3>
+            <div class="inf">
+                 Ter um emprego
+            </div>  
+            <h3 class="alinhar">Formação Academica</h3>
+            <div class="inf">
+                 Senai
+            </div>  
+            <h3 class="alinhar">Língua Estrangeira</h3>
+            <div class="inf">
+                 Inglês basico, Libras basico.
+            </div>  
+            <h3 class="alinhar">Experiência Proficional</h3>
+            <div class="inf">
+                 Primeiro emprego
+            </div>       
+        </div>
+
+    </div>
+</body>
+</html>
