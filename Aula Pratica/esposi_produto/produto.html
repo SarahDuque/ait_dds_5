@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo do site -->
+    <title>Roupas - S.D</title>
+    <!--Instalação Jquery-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+    <script defer src="./js/flipCard.js"></script>
+    <!-- ligação da personalização do site -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilopesquisa.css">
+
+    <!-- logo perto do titulo do site -->
+    <link rel="stylesheet" href="css/estiloGrid.css">
+    <link rel="shortcut icon" href="img/favicon-96x96.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="cart">
+        <div class="center"></div>
+        <div class="logo"><img src="img/a.png" alt=""></div>
+
+
+
+        <div class="icon-cart">
+            <div class="icon-favs">
+                <svg class="favcora-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12.01 6.001C6.5 1 1 8 5.782 13.001L12.011 20l6.23-7C23 8 17.5 1 12.01 6.002Z" />
+                </svg>
+                <h3 class="text-favs">favoritos</h3>
+            </div>
+            <div class="cartfav">
+                <svg class="carro-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                </svg>
+                <h3 class="text-favs">carrinho</h3>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- caixinha de pesquisa -->
+    <input type="checkbox" id="check" />
+    <div class="caixa-pesquisa">
+        <input type="text" placeholder="Digite o nome do produto...">
+        <label for="check" class="icon">
+            <i class="fas fa-search"></i>
+        </label>
+    </div>
+
+    <section class="perfil-lolo">
+        <div class="nome-perfil">
+            <h1>Gracia Monique</h1>
+        </div>
+        <div class="sair-perfil">
+            <svg class="exit-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M16 12H4m12 0-4 4m4-4-4-4m3-4h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2" />
+            </svg>
+            <h1>Sair</h1>
+        </div>
+
+        <head>
+            <div class="container-dev-ras">
+                <div class="rastrear-devolver">
+                    <div class="rastrear">
+                        <svg class="caminhao" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
+                        </svg>
+                        <h1 class="text-favs">rastrear</h1>
+                    </div>
+                    <div class="devolver">
+                        <svg class="devolver-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12.013 6.175 7.006 9.369l5.007 3.194-5.007 3.193L2 12.545l5.006-3.193L2 6.175l5.006-3.194 5.007 3.194ZM6.981 17.806l5.006-3.193 5.006 3.193L11.987 21l-5.006-3.194Z" />
+                            <path
+                                d="m12.013 12.545 5.006-3.194-5.006-3.176 4.98-3.194L22 6.175l-5.007 3.194L22 12.562l-5.007 3.194-4.98-3.211Z" />
+                        </svg>
+                        <h1 class="text-favs">devolver</h1>
+                    </div>
+
+                </div>
+            </div>
+        </head>
+
+        <div class="foto-perfil">
+            <img src="img/a.webp" class="logo-perfil" width="100" height="100" alt="">
+        </div>
+
+    </section>
+
+    <section class="produtos-lolo">
+        <div class="filtro">
+            <h1>Filtros
+                <svg class="filter" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M5.05 3C3.291 3 2.352 5.024 3.51 6.317l5.422 6.059v4.874c0 .472.227.917.613 1.2l3.069 2.25c1.01.742 2.454.036 2.454-1.2v-7.124l5.422-6.059C21.647 5.024 20.708 3 18.95 3H5.05Z" />
+                </svg>
+            </h1>
+        </div>
+        <div class="produtos-maquiagem">
+            <ul class="filtros">
+                <li>blusas</li>
+                <li>moletom</li>
+                <li>short</li>
+                <li>calça</li>
+                <li>sapatos</li>
+                <li>cropped</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="./js/pagJs.js"></script>
+
+    <!-- fim categoria -->
+    <!-- inicio categorias produtos -->
+    <section class="page-container">
+        <div class="produtos">
+            <div class="produto">
+                <div class="cartao">
+                    <div class="cartaoFrente">
+                        <section class="produto-img">
+                            <img id="imagem0" src="https://m.media-amazon.com/images/I/41G2IS5aTaL._AC_SY1000_.jpg" alt="produto_img">
+                        </section>
+                        <section class="produto-info">
+                            <div class="prod-tit">
+                                <h4>Blusa social manga longa</h4>
+                            </div>
+                            <div class="prod-preco">
+                                <div class="prod-valor">
+                                    <span style="
+                                        opacity: 0.4;
+                                        color: hsl(0, 70%, 30%);
+                                        text-decoration: line-through;
+                                        font-weight: bold;
+                                        /* filter: drop-shadow(0px 0px 2px red); */
+                                    ">
+                                        R$100,00
+                                    </span>
+                                    <span style="
+                                        color: green;
+                                        font-weight: bolder;
+                                    ">R$39,77</span>
+                                </div>
+                                <div class="prod-prom">
+                                    <span style="
+                                        color: hsl(0,90%,60%);
+                                        filter: drop-shadow(0 0 -2px hsl(0,30%,30%));
+                                        border-top-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        box-shadow: inset -2px -2px 0 hsl(20,50%,70%);
+                                        background-color: hsl(20,50%,94%);
+                                        padding: 4px;
+                                        opacity: 0.9;
+                                    ">10% OFF</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cartaoTras">
+                        <section class="descricao">
+                            <hr>
+                            <div>
+                                <div>
+                                    <h2>Descrição</h2>
+                                </div>
+                                <div class="background-desc">
+                                    <p>Perfeito para um visual mais casual e corporativo.</p>
+                                    <div class="expandir">
+                                        <div class="icon-expandir">
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <button id="bt-comprar" type="button">
+                    <span style="
+                        color: #796384;
+                    ">Adicionar ao carrinho</span>
+                    <img src="./img/shopping_cart_24dp_A737BE_FILL0_wght400_GRAD0_opsz24.png" alt="carrinho">
+                </button>
+            </div>
+
+            <div class="produto">
+                <div class="cartao">
+                    <div class="cartaoFrente">
+                        <section class="produto-img">
+                            <img id="imagem1" src="https://images.tcdn.com.br/img/img_prod/891360/calca_jeans_wide_leg_hadassa_761_1_aa3f88cb5ac81b8ac11e8aec98bb0192.jpg" alt="produto_img">
+                        </section>
+                        <section class="produto-info">
+                            <div class="prod-tit">
+                                <h4>Calça jeans wide</h4>
+                            </div>
+                            <div class="prod-preco">
+                                <div class="prod-valor">
+                                    <span style="
+                                        opacity: 0.4;
+                                        color: hsl(0, 70%, 30%);
+                                        text-decoration: line-through;
+                                        font-weight: bold;
+                                        /* filter: drop-shadow(0px 0px 2px red); */
+                                    ">
+                                        R$150,00
+                                    </span>
+                                    <span style="
+                                        color: green;
+                                        font-weight: bolder;
+                                    ">R$100,00</span>
+                                </div>
+                                <div class="prod-prom">
+                                    <span style="
+                                        color: hsl(0,90%,60%);
+                                        filter: drop-shadow(0 0 -2px hsl(0,30%,30%));
+                                        border-top-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        box-shadow: inset -2px -2px 0 hsl(20,50%,70%);
+                                        background-color: hsl(20,50%,94%);
+                                        padding: 4px;
+                                        opacity: 0.9;
+                                    ">10% OFF</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cartaoTras">
+                        <section class="descricao">
+                            <hr>
+                            <div>
+                                <div>
+                                    <h2>Descrição</h2>
+                                </div>
+                                <div class="background-desc">
+                                    <p>Perfeito para um visual mais casual podendo conter várias combinações.</p>
+                                    <div class="expandir">
+                                        <div class="icon-expandir">
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <button id="bt-comprar" type="button">
+                    <span style="
+                        color: #796384;
+                    ">Adicionar ao carrinho</span>
+                    <img src="./img/shopping_cart_24dp_A737BE_FILL0_wght400_GRAD0_opsz24.png" alt="carrinho">
+                </button>
+            </div>
+
+            <div class="produto">
+                <div class="cartao">
+                    <div class="cartaoFrente">
+                        <section class="produto-img">
+                            <img id="imagem2" src="https://m.media-amazon.com/images/I/41D0-FFOtEL._AC_.jpg" alt="produto_img">
+                        </section>
+                        <section class="produto-info">
+                            <div class="prod-tit">
+                                <h4>cropped Masculino</h4>
+                            </div>
+                            <div class="prod-preco">
+                                <div class="prod-valor">
+                                    <span style="
+                                        opacity: 0.4;
+                                        color: hsl(0, 70%, 30%);
+                                        text-decoration: line-through;
+                                        font-weight: bold;
+                                        /* filter: drop-shadow(0px 0px 2px red); */
+                                    ">
+                                        R$50,00
+                                    </span>
+                                    <span style="
+                                        color: green;
+                                        font-weight: bolder;
+                                    ">R$40,00</span>
+                                </div>
+                                <div class="prod-prom">
+                                    <span style="
+                                        color: hsl(0,90%,60%);
+                                        filter: drop-shadow(0 0 -2px hsl(0,30%,30%));
+                                        border-top-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        box-shadow: inset -2px -2px 0 hsl(20,50%,70%);
+                                        background-color: hsl(20,50%,94%);
+                                        padding: 4px;
+                                        opacity: 0.9;
+                                    ">10% OFF</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cartaoTras">
+                        <section class="descricao">
+                            <hr>
+                            <div>
+                                <div>
+                                    <h2>Descrição</h2>
+                                </div>
+                                <div class="background-desc">
+                                    <p>Perfeito para um visual para ir para balada ou uma coisa mais casual com os amigos.</p>
+                                    <div class="expandir">
+                                        <div class="icon-expandir">
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <button id="bt-comprar" type="button">
+                    <span style="
+                        color: #796384;
+                    ">Adicionar ao carrinho</span>
+                    <img src="./img/shopping_cart_24dp_A737BE_FILL0_wght400_GRAD0_opsz24.png" alt="carrinho">
+                </button>
+            </div>
+
+            <div class="produto">
+                <div class="cartao">
+                    <div class="cartaoFrente">
+                        <section class="produto-img">
+                            <img id="imagem3" src="https://www.avvi.com.br/app-avvi/assets/images/dinamica/produto/86/cor_0/original/ash1-preto-short-basico-preto-110123-fb87f8.jpg" alt="produto_img">
+                        </section>
+                        <section class="produto-info">
+                            <div class="prod-tit">
+                                <h4>Short de academia</h4>
+                            </div>
+                            <div class="prod-preco">
+                                <div class="prod-valor">
+                                    <span style="
+                                        opacity: 0.4;
+                                        color: hsl(0, 70%, 30%);
+                                        text-decoration: line-through;
+                                        font-weight: bold;
+                                        /* filter: drop-shadow(0px 0px 2px red); */
+                                    ">
+                                        R$40,00
+                                    </span>
+                                    <span style="
+                                        color: green;
+                                        font-weight: bolder;
+                                    ">R$35,00</span>
+                                </div>
+                                <div class="prod-prom">
+                                    <span style="
+                                        color: hsl(0,90%,60%);
+                                        filter: drop-shadow(0 0 -2px hsl(0,30%,30%));
+                                        border-top-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        box-shadow: inset -2px -2px 0 hsl(20,50%,70%);
+                                        background-color: hsl(20,50%,94%);
+                                        padding: 4px;
+                                        opacity: 0.9;
+                                    ">11% OFF</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cartaoTras">
+                        <section class="descricao">
+                            <hr>
+                            <div>
+                                <div>
+                                    <h2>Descrição</h2>
+                                </div>
+                                <div class="background-desc">
+                                    <p>Perfeito para um dia de academia com um tecido que estica trazendo segurança e conforto.</p>
+                                    <div class="expandir">
+                                        <div class="icon-expandir">
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <button id="bt-comprar" type="button">
+                    <span style="
+                        color: #796384;
+                    ">Adicionar ao carrinho</span>
+                    <img src="./img/shopping_cart_24dp_A737BE_FILL0_wght400_GRAD0_opsz24.png" alt="carrinho">
+                </button>
+            </div>
+
+            <div class="produto">
+                <div class="cartao">
+                    <div class="cartaoFrente">
+                        <section class="produto-img">
+                            <img id="imagem4" src="https://osklenbr.vteximg.com.br/arquivos/ids/445778/6946925_moletom_1.jpg?v=638400611408300000" alt="produto_img">
+                        </section>
+                        <section class="produto-info">
+                            <div class="prod-tit">
+                                <h4>moletom</h4>
+                            </div>
+                            <div class="prod-preco">
+                                <div class="prod-valor">
+                                    <span style="
+                                        opacity: 0.4;
+                                        color: hsl(0, 70%, 30%);
+                                        text-decoration: line-through;
+                                        font-weight: bold;
+                                        /* filter: drop-shadow(0px 0px 2px red); */
+                                    ">
+                                        R$69,99
+                                    </span>
+                                    <span style="
+                                        color: green;
+                                        font-weight: bolder;
+                                    ">R$59,99</span>
+                                </div>
+                                <div class="prod-prom">
+                                    <span style="
+                                        color: hsl(0,90%,60%);
+                                        filter: drop-shadow(0 0 -2px hsl(0,30%,30%));
+                                        border-top-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        box-shadow: inset -2px -2px 0 hsl(20,50%,70%);
+                                        background-color: hsl(20,50%,94%);
+                                        padding: 4px;
+                                        opacity: 0.9;
+                                    ">11% OFF</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cartaoTras">
+                        <section class="descricao">
+                            <hr>
+                            <div>
+                                <div>
+                                    <h2>Descrição</h2>
+                                </div>
+                                <div class="background-desc">
+                                    <p>Perfeito para um dia de frio com um tecido macio e confortávekl.</p>
+                                    <div class="expandir">
+                                        <div class="icon-expandir">
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <button id="bt-comprar" type="button">
+                    <span style="
+                        color: #796384;
+                    ">Adicionar ao carrinho</span>
+                    <img src="./img/shopping_cart_24dp_A737BE_FILL0_wght400_GRAD0_opsz24.png" alt="carrinho">
+                </button>
+            </div>
+
+            <div class="produto">
+                <div class="cartao">
+                    <div class="cartaoFrente">
+                        <section class="produto-img">
+                            <img id="imagem5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD8P6wQkzIpm8nGqerm0jg0qNeaZ-fVzQRfg&s" alt="produto_img">
+                        </section>
+                        <section class="produto-info">
+                            <div class="prod-tit">
+                                <h4>sapato oxford</h4>
+                            </div>
+                            <div class="prod-preco">
+                                <div class="prod-valor">
+                                    <span style="
+                                        opacity: 0.4;
+                                        color: hsl(0, 70%, 30%);
+                                        text-decoration: line-through;
+                                        font-weight: bold;
+                                        /* filter: drop-shadow(0px 0px 2px red); */
+                                    ">
+                                        R$39,99
+                                    </span>
+                                    <span style="
+                                        color: green;
+                                        font-weight: bolder;
+                                    ">R$29,99</span>
+                                </div>
+                                <div class="prod-prom">
+                                    <span style="
+                                        color: hsl(0,90%,60%);
+                                        filter: drop-shadow(0 0 -2px hsl(0,30%,30%));
+                                        border-top-right-radius: 10px;
+                                        border-bottom-left-radius: 10px;
+                                        box-shadow: inset -2px -2px 0 hsl(20,50%,70%);
+                                        background-color: hsl(20,50%,94%);
+                                        padding: 4px;
+                                        opacity: 0.9;
+                                    ">11% OFF</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="cartaoTras">
+                        <section class="descricao">
+                            <hr>
+                            <div>
+                                <div>
+                                    <h2>Descrição</h2>
+                                </div>
+                                <div class="background-desc">
+                                    <p>Perfeito para um jantar em familia ou com os amigos.</p>
+                                    <div class="expandir">
+                                        <div class="icon-expandir">
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+                <button id="bt-comprar" type="button">
+                    <span style="
+                        color: #796384;
+                    ">Adicionar ao carrinho</span>
+                    <img src="./img/shopping_cart_24dp_A737BE_FILL0_wght400_GRAD0_opsz24.png" alt="carrinho">
+                </button>
+            </div>
+
+            <!-- fim inicio categorias produtros  -->
+
+    </section>
+</body>
+
+</html>
